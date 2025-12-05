@@ -152,13 +152,33 @@ footer {
 
 .participants-list {
   margin: 6px 0 0 0;
-  padding-left: 18px;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .participant-item {
+  background: #e3eafc;
+  border-radius: 16px;
+  padding: 4px 10px 4px 16px;
+  position: relative;
   color: #2d4a65;
   font-size: 0.97em;
-  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.delete-icon {
+  margin-left: 8px;
+  cursor: pointer;
+  color: #d32f2f;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+
+.delete-icon:hover {
+  color: #b71c1c;
 }
 
 .no-participants {
